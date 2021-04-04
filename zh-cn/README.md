@@ -2,10 +2,6 @@
 
 ## 简介
 
-Getting started with static program analysis. Read this and start writing your first static program analyzer! We focus on the problem:
-
-> ❓ How to automatically and efficiently guarantee software quality
-
 静态程序分析入门。阅读此书并着手编写你的第一个静态程序分析器吧！本仓库关注一个非常重要的问题：
 
 > ❓ 如何自动化地高效保障软件质量
@@ -36,16 +32,16 @@ Getting started with static program analysis. Read this and start writing your f
 
 后续会考虑录制一些视频补充对动态例子的讲解。
 
-![感谢读者支持 :P](README.assets/image-20201231205814145.png)
+![感谢读者支持 :P](../assets/README/image-20201231205814145.png)
 
 ## 这一《静态程序分析》教程对谁有用？
 
 学生，开发者，研究者……几乎所有当代生活者都能从中受益。
 
-* 学习方向与程序有关的**学生。** 
+* 学习方向与程序有关的**学生。**
   * 计算机方向的学生可以通过深入学习这一领域知识而为自己建立独特的学术和就业优势，也能加深对编程的理解以降低自己写出bug的频率。
   * 其他方向的学生既然已经开始阅读这一页面，想必对计算机方向的内容有一定兴趣。你可以通过了解这一技术，了解静态分析软件（包括其内置于编译器，集成开发环境的部分）能够为你提供怎样的功能和便利，以及如何更好地使用这些软件，以此保证你所关心的程序质量。
-* 工作内容与程序有关的**开发者。** 
+* 工作内容与程序有关的**开发者。**
   * 无论你希望更好地理解[Wiki](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis)上众多的开源或是闭源的静态程序分析技术，还是希望自己开发一个适用于眼下工作内容的静态程序分析器以保证程序质量，了解静态程序分析都会有所帮助。
 * 研究领域与程序相关的**研究者。** 或许你希望微调研究方向，却因没有合适的入门材料而苦恼；或许你希望了解计算机领域的相关知识以期获得启发……这一教程可以作为你的入门材料或是闲暇读物。
 * 生活与程序相关的**每个人**
@@ -56,7 +52,7 @@ Getting started with static program analysis. Read this and start writing your f
 
 ### 静态程序分析在计算机科学领域中的定位
 
-![](.gitbook/assets/PL.png)
+![](../assets/PL.png)
 
 **静态程序分析**是**编程语言**中**应用**层面下的一个细分领域，它是一个非常重要的核心内容。
 
@@ -97,7 +93,7 @@ Getting started with static program analysis. Read this and start writing your f
 
 ### 静态程序分析的市场
 
-![](.gitbook/assets/market.png)
+![](../assets/market.png)
 
 * 在学术界，静态程序分析技术几乎可以应用于所有关于程序的研究方向。
 * 在工业界，国外的Google，IBM等大企业已经初步建立了自己的静态程序分析团队。国内的华为和阿里等企业也正在积极寻找静态程序分析方面的人才。
@@ -123,7 +119,7 @@ Getting started with static program analysis. Read this and start writing your f
   1. **无法保证没有bug。** 这是无法遍历所有可能的程序输入的必然结果。
   2. 在当今的由多核与网络应用带来的**并发环境下作用有限。** 某个bug可能只在特定情况下发生，因而难以稳定地复现。如果你对并发程序的动态测试细节感兴趣，可以参考[《拧龙头法测试并发程序》](https://zhuanlan.zhihu.com/p/51341151)。（截图来自南京大学《形式化语义》课程资料）
 
-![](.gitbook/assets/concurrentProgram.png)
+![](../assets/concurrentProgram.png)
 
 #### 形式化语义验证
 
@@ -132,7 +128,7 @@ Getting started with static program analysis. Read this and start writing your f
   1. 学术门槛较高，学习者必须有良好的数学基础才能入门。
   2. 验证代价较高，一般来说非常重要的项目会使用这一方式保证程序质量。甚至在操作系统这样重要的软件中，也并不一定会使用。\(截图来自鸿蒙OS直播发布会\)
 
-![](.gitbook/assets/harmonyOS.png)
+![](../assets/harmonyOS.png)
 
 ## 加入项目/How to contribute
 
